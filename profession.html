@@ -2,86 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Suyanpeng Zhang - Professional Activities</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-      padding: 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    /* Simple page content styling */
-    .content {
-      padding: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Activities · Suyanpeng Zhang</title>
+  <meta name="description" content="Reviewing and conference service by Suyanpeng Zhang." />
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Suyanpeng Zhang's Home Page</a></li>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">SZ</span>Suyanpeng Zhang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="teaching.html">Teaching and Mentorship</a></li>
-        <li><a href="profession.html">Professional Activities</a></li>
+        <li><a href="teaching.html">Teaching &amp; Mentorship</a></li>
+        <li><a href="profession.html">Service</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <div class="content">
+  <main class="container">
+    <section class="page-header reveal">
+      <span class="eyebrow">Professional Activities</span>
+      <h1>Service to the <span class="gradient-text">community</span></h1>
+      <p class="lead">Peer review for journals in operations research and health, and session chairing at INFORMS.</p>
+    </section>
 
-<!-- Guest Lecturer Section -->
-        <section id="reviewer">
-            <h2>Reviewer</h2>
-            <ul>
-                <li>
-                    <strong>Health Care Management Science (2)</strong>
-                </li>
-              <li>
-                    <strong>IISE Transactions (1)</strong>
-                </li>
-              <li>
-                    <strong>Journal of Clinical Medicine Research (1)</strong>
-                </li>
-              <li>
-                    <strong>Journal of Medical Cases (1)</strong>
-                </li>
-              <li>
-                    <strong>Frontiers in Public Health (1)</strong>
-                </li>
-                <!-- Add more lectures as needed -->
-            </ul>
-        </section>
-    <section id="session chair">
-            <h2>Session Chair</h2>
-            <ul>
-                <li>
-                    <strong>INFORMS Annual Conference (2023, 2024, 2025)</strong>
-                </li>
-                <!-- Add more lectures as needed -->
-            </ul>
-        </section>
-  </div>
+    <section class="section-tight">
+      <div class="grid grid-2">
+        <!-- Reviewer -->
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+          </div>
+          <div class="stat gradient-text">6</div>
+          <h3>Journal Reviews</h3>
+          <div class="item-list" style="margin-top:18px;gap:10px;">
+            <div class="pub-meta" style="margin:0;"><span class="tag">Health Care Management Science · 2</span></div>
+            <div class="pub-meta" style="margin:0;"><span class="tag">IISE Transactions · 1</span></div>
+            <div class="pub-meta" style="margin:0;"><span class="tag">Journal of Clinical Medicine Research · 1</span></div>
+            <div class="pub-meta" style="margin:0;"><span class="tag">Journal of Medical Cases · 1</span></div>
+            <div class="pub-meta" style="margin:0;"><span class="tag">Frontiers in Public Health · 1</span></div>
+          </div>
+        </article>
+
+        <!-- Session chair -->
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat gradient-text">3×</div>
+          <h3>Session Chair</h3>
+          <p style="margin-top:6px;">INFORMS Annual Conference</p>
+          <div class="pub-meta" style="margin-top:18px;">
+            <span class="tag tag-highlight">2023</span>
+            <span class="tag tag-highlight">2024</span>
+            <span class="tag tag-highlight">2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2025</span> Suyanpeng Zhang</span>
+      <div class="footer-links">
+        <a href="CV_Suyanpeng.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.linkedin.com/in/suyanpengzhang/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/suyanpengzhang" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
-

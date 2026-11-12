@@ -2,124 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Suyanpeng Zhang - Teaching</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-      padding: 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    /* Simple page content styling */
-    .content {
-      padding: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching &amp; Mentorship · Suyanpeng Zhang</title>
+  <meta name="description" content="Teaching and mentorship experience of Suyanpeng Zhang." />
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Suyanpeng Zhang's Home Page</a></li>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">SZ</span>Suyanpeng Zhang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="teaching.html">Teaching and Mentorship</a></li>
-        <li><a href="profession.html">Professional Activities</a></li>
+        <li><a href="teaching.html">Teaching &amp; Mentorship</a></li>
+        <li><a href="profession.html">Service</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <div class="content">
+  <main class="container">
+    <section class="page-header reveal">
+      <span class="eyebrow">Teaching &amp; Mentorship</span>
+      <h1>Sharing what I <span class="gradient-text">love to learn</span></h1>
+      <p class="lead">Guest lectures and TA work in optimization and analytics, plus mentoring students from high school through graduate school.</p>
+    </section>
 
-<!-- Guest Lecturer Section -->
-        <section id="guest-lecturer">
-            <h2>Guest Lecturer</h2>
-            <ul>
-                <li>
-                    <strong>Optimization Methods for Analytics, ISE 530, University of Southern California, Spring 2024</strong>
-                    <p>Taught the first two weeks of classes. Covered concepts in linear programming.</p>
-                </li>
-                <li>
-                    <strong>Modeling for Health Policy and Medical Decision Making, ISE 505, University of Southern California, Spring 2024</strong>
-                    <p>Introduced the fundamental concepts of mixed-integer linear programming and presented a research example.</p>
-                </li>
-                <!-- Add more lectures as needed -->
-            </ul>
-        </section>
-    
-        <!-- TA Section -->
-        <section id="ta">
-            <h2>Teaching Assistant</h2>
-            <ul>
-                <li>
-                    <strong>Optimization Methods for Analytics, ISE 530, University of Southern California, Spring 2024</strong>
-                    <a href="TA_ISE530.pdf" target="_blank">TA Evaluation</a>
-                  <p>58 students. Scores: Instructional Practices: 3.83/4 Inclusion Practices: 3.87/4 Assessment Practices:3.81/4 </p>
-                </li>
-                <li>
-                    <strong>Data Analytics Consulting, ISE 534, University of Southern California, Fall 2021</strong>
-                    <a href="TA_ISE534.pdf" target="_blank">TA Evaluation</a>
-                  <p>38 students. Scores: Instructional Practices: 3.72/4 Inclusion Practices: 3.74/4 Assessment Practices:3.74/4 </p>
-                </li>
-                <!-- Add more courses as needed -->
-            </ul>
-        </section>
+    <!-- Guest lectures -->
+    <section class="section-tight">
+      <h2 class="pub-group-title reveal">Guest Lecturer</h2>
+      <div class="item-list">
+        <article class="card item reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="item-body">
+            <h3>ISE 530 · Optimization Methods for Analytics</h3>
+            <p class="sub">University of Southern California · Spring 2024</p>
+            <p>Taught the first two weeks of classes, covering concepts in linear programming.</p>
+          </div>
+        </article>
+        <article class="card item reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="item-body">
+            <h3>ISE 505 · Modeling for Health Policy and Medical Decision Making</h3>
+            <p class="sub">University of Southern California · Spring 2024</p>
+            <p>Introduced the fundamentals of mixed-integer linear programming and presented a research example.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- TA -->
+    <section class="section-tight">
+      <h2 class="pub-group-title reveal">Teaching Assistant</h2>
+      <div class="item-list">
+        <article class="card item reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="item-body">
+            <h3>ISE 530 · Optimization Methods for Analytics</h3>
+            <p class="sub">University of Southern California · Spring 2024 · 58 students</p>
+            <div class="scores">
+              <div class="score"><strong>3.83<small>/4</small></strong><span>Instructional practices</span></div>
+              <div class="score"><strong>3.87<small>/4</small></strong><span>Inclusion practices</span></div>
+              <div class="score"><strong>3.81<small>/4</small></strong><span>Assessment practices</span></div>
+            </div>
+            <div class="pub-meta"><a class="tag" href="TA_ISE530.pdf" target="_blank" rel="noopener">View TA evaluation →</a></div>
+          </div>
+        </article>
+        <article class="card item reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div class="item-body">
+            <h3>ISE 534 · Data Analytics Consulting</h3>
+            <p class="sub">University of Southern California · Fall 2021 · 38 students</p>
+            <div class="scores">
+              <div class="score"><strong>3.72<small>/4</small></strong><span>Instructional practices</span></div>
+              <div class="score"><strong>3.74<small>/4</small></strong><span>Inclusion practices</span></div>
+              <div class="score"><strong>3.74<small>/4</small></strong><span>Assessment practices</span></div>
+            </div>
+            <div class="pub-meta"><a class="tag" href="TA_ISE534.pdf" target="_blank" rel="noopener">View TA evaluation →</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <!-- Mentored Students Section -->
-        <section id="mentored-students">
-            <h2>Mentorship</h2>
-            <ul>
-              <h3>High School Mentees</h3>
-                <li>
-                    <strong>Sarah Brown (Summer 2022)</strong>
-                    <p>Through USC Viterbi’s Summer High School Intensive in Next-Generation Engineering (SHINE) research program.</p>
-                </li>
-              <h3>Undergraduate Mentees</h3>
-                <li>
-                    <strong>Sanya Khattar (2023 - 2024)</strong>
-                    <p>Through the Center for Undergraduate Research in Viterbi Engineering
-(CURVE) research program.</p>
-                </li>
-              <li>
-                    <strong>Ying Hong (2021 - 2022)</strong>
-                    <p>Through the COVID-19 project. Published one journal article.</p>
-                </li>
-              <li>
-                    <strong>Jessica Pham (2019 - 2020)</strong>
-                    <p>Through the liver transplant project. Published one journal article.</p>
-                </li>
-              <h3>Graduate Mentees</h3>
-                <li>
-                    <strong>Jing Jin (2022 - 2024)</strong>
-                    <p>Through COVID-19 and nurse scheduling projects. Published one journal article. She is now a PhD student at USC.</p>
-                </li>
-              <li>
-                    <strong>Kunyu Yu (2022)</strong>
-                    <p>Through the COVID-19 project. </p>
-                </li>
-                <!-- Add more students as needed -->
-            </ul>
-        </section>
-  </div>
+    <!-- Mentorship -->
+    <section class="section-tight">
+      <h2 class="pub-group-title reveal">Mentorship</h2>
+      <div class="grid grid-3">
+        <div class="reveal">
+          <h3 class="subhead">High School</h3>
+          <div class="item-list">
+            <article class="card">
+              <h3>Sarah Brown</h3>
+              <p class="sub">Summer 2022</p>
+              <p>Through USC Viterbi’s Summer High School Intensive in Next-Generation Engineering (SHINE) research program.</p>
+            </article>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="subhead">Undergraduate</h3>
+          <div class="item-list">
+            <article class="card">
+              <h3>Sanya Khattar</h3>
+              <p class="sub">2023 – 2024</p>
+              <p>Through the Center for Undergraduate Research in Viterbi Engineering (CURVE) program.</p>
+            </article>
+            <article class="card">
+              <h3>Ying Hong</h3>
+              <p class="sub">2021 – 2022</p>
+              <p>COVID-19 project. Published one journal article.</p>
+            </article>
+            <article class="card">
+              <h3>Jessica Pham</h3>
+              <p class="sub">2019 – 2020</p>
+              <p>Liver transplant project. Published one journal article.</p>
+            </article>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="subhead">Graduate</h3>
+          <div class="item-list">
+            <article class="card">
+              <h3>Jing Jin</h3>
+              <p class="sub">2022 – 2024</p>
+              <p>COVID-19 and nurse scheduling projects. Published one journal article. Now a PhD student at USC.</p>
+            </article>
+            <article class="card">
+              <h3>Kunyu Yu</h3>
+              <p class="sub">2022</p>
+              <p>COVID-19 project.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2025</span> Suyanpeng Zhang</span>
+      <div class="footer-links">
+        <a href="CV_Suyanpeng.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.linkedin.com/in/suyanpengzhang/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/suyanpengzhang" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
