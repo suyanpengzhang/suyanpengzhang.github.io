@@ -2,172 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Suyanpeng Zhang's Home Page</title>
-  <style>
-    /* Basic reset and styling */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-      padding: 20px;
-    }
-    /* Navigation menu */
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    /* Layout for main content */
-    .hero {
-      display: flex;           /* place items side by side */
-      align-items: center;     /* vertically center them */
-      justify-content: space-between; /* space between text & pic */
-      padding: 40px 20px;
-    }
-    .intro {
-      max-width: 60%;          /* limit text width */
-      margin-right: 20px;
-    }
-    .recent {
-      max-width: 100%;          /* limit text width */
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 2em;
-    }
-    p {
-      line-height: 1.5;
-    }
-    /* Image styling */
-    .profile-pic {
-      max-width: 200px;
-      border-radius: 50%;      /* makes picture round */
-    }
-    .social-links ul {
-      list-style: none;         /* remove bullets */
-      padding: 0;               /* remove default padding */
-      margin: 0;
-    }
-    .social-links li {
-      /*list-style: none;  */
-      margin: 5px 0;            /* spacing between items */
-    }
-    .social-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-    .recent li {
-  margin-bottom: 10px; /* or however much space you'd like */
-}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suyanpeng Zhang</title>
+  <meta name="description" content="Suyanpeng Zhang — Postdoctoral scholar at Northwestern University working on healthcare analytics, dynamic programming, and optimization." />
+  <script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Suyanpeng Zhang's Home Page</a></li>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">SZ</span>Suyanpeng Zhang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="teaching.html">Teaching and Mentorship</a></li>
-        <li><a href="profession.html">Professional Activities</a></li>
-        <!-- You can add more links if needed -->
+        <li><a href="teaching.html">Teaching &amp; Mentorship</a></li>
+        <li><a href="profession.html">Service</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <!-- Main Content (Hero Section) -->
-  <div class="hero">
-    <div class="intro">
-      <h1>About Me</h1>
-      <p>
-        Hello! I’m Suyanpeng Zhang, and I currently serve as a postdoctoral scholar in the Department of Industrial Engineering and Management Science at Northwestern University, working under Professor Sanjay Mehrotra. Before this appointment, I earned my Ph.D. in Industrial and Systems Engineering from the University of Southern California in 2024, advised by Professor Sze-Chuan Suen. I also hold an M.S. in Industrial and Operations Engineering from the University of Michigan (2019) and a B.S. in Mathematics from Rensselaer Polytechnic Institute (2017).        
-      </p>
-      <p>
-        My research interests include healthcare analytics, dynamic programming, and optimization methods. I am also interested in interdisciplinary areas that combine optimization, statistics, probability, and artificial intelligence. 
-        Some of the topics that I have been working on recently:
-        <li>
-          Markov decision processes with applications in healthcare
-        </li>
-        <li>
-          Approximate stochastic gradient descent algorithm and its applications
-        </li>
-        <li>
-          Mixed-integer linear programming models in resource allocation
-        </li>
-      </p>
-      <h3>I am on the 2025-2026 academic job market!</h3>
-    </div>
-    <div>
-      <!-- Replace 'path/to/your-photo.jpg' with either a local image or a URL -->
-      <img src="suyan.jpg" alt="Profile Photo" style="width: 300px; height: auto;">
-      <!-- Links to CV, LinkedIn, Google Scholar, GitHub -->
-      <div class="social-links">
-        <li>
-        <!-- CV Link (Assuming you uploaded 'YourName_CV.pdf' at the root) -->
-        <i class="fa fa-check"><a href="CV_Suyanpeng.pdf" target="_blank">
-          <i class="fas fa-file"></i> CV
-        </a>
-          </li>
-        <li>
-        <!-- LinkedIn -->
-        <i class="fa fa-check"><a href="https://www.linkedin.com/in/suyanpengzhang/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        </li>
-        <li>
-        <!-- Google Scholar -->
-        <i class="fa fa-check"><a href="https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&hl=en&oi=ao" target="_blank">
-          <i class="fas fa-graduation-cap"></i> Google Scholar
-        </a>
-        </li>
-        <li>
-        <!-- GitHub -->
-        <i class="fa fa-check"><a href="https://github.com/suyanpengzhang" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        </li>
-        <li>
-          Email: suyan430 (at) gmail (dot) com
-        </li>
+  <main>
+    <!-- Hero -->
+    <section class="container hero">
+      <div class="reveal">
+        <span class="status-pill"><span class="status-dot"></span>On the 2025–2026 academic job market</span>
+        <h1>Hi, I'm <span class="gradient-text">Suyanpeng Zhang</span>.</h1>
+        <p class="role">
+          Postdoctoral Scholar · Industrial Engineering &amp; Management Sciences · Northwestern University
+        </p>
+        <p>
+          I work with Professor Sanjay Mehrotra on healthcare analytics, dynamic programming, and optimization.
+          I received my Ph.D. in Industrial and Systems Engineering from the University of Southern California in 2024,
+          advised by Professor Sze-Chuan Suen. I also hold an M.S. in Industrial and Operations Engineering from the
+          University of Michigan (2019) and a B.S. in Mathematics from Rensselaer Polytechnic Institute (2017).
+        </p>
+
+        <div class="links">
+          <a class="btn btn-primary" href="CV_Suyanpeng.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+            Curriculum Vitae
+          </a>
+          <a class="btn" href="https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Google Scholar
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/suyanpengzhang/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/suyanpengzhang" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg>
+            GitHub
+          </a>
         </div>
+        <p class="email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          suyan430 (at) gmail (dot) com
+        </p>
+      </div>
+
+      <div class="photo-wrap reveal">
+        <img class="photo" src="suyan.jpg" alt="Portrait of Suyanpeng Zhang" />
+      </div>
+    </section>
+
+    <!-- Research interests -->
+    <section class="container section">
+      <div class="reveal">
+        <span class="eyebrow">Research Interests</span>
+        <h2 class="section-title">What I'm working on</h2>
+        <p class="lead">
+          Healthcare analytics, dynamic programming, and optimization methods — and interdisciplinary work that
+          brings together optimization, statistics, probability, and artificial intelligence.
+        </p>
+      </div>
+      <div class="grid grid-3" style="margin-top: 28px;">
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>MDPs in Healthcare</h3>
+          <p>Markov decision processes for medical decision making and infectious disease control.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          </div>
+          <h3>Stochastic Optimization</h3>
+          <p>Approximate stochastic gradient descent algorithms and their applications.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <h3>Resource Allocation</h3>
+          <p>Mixed-integer linear programming models for allocating scarce health resources.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="container section">
+      <div class="reveal">
+        <span class="eyebrow">Recent News</span>
+        <h2 class="section-title">Latest updates</h2>
+      </div>
+      <div class="card reveal" style="margin-top: 28px; padding: 32px;">
+        <ol class="timeline">
+          <li>
+            <time datetime="2025-05">May 2025</time>
+            <p>My paper <em>“Quantifying the benefits of increasing decision-making frequency for health applications with regular decision epochs”</em> was selected as featured research in ISE Magazine. <a href="featuredISE.pdf" target="_blank" rel="noopener">Read the feature →</a></p>
+          </li>
+          <li>
+            <time datetime="2025-03">March 2025</time>
+            <p>My paper <em>“Strategic Influence of Household Attitudes on HPV Vaccination in Kenya: A Network-Based Optimization Approach”</em> with Sze-Chuan Suen and Corrina Moucheraud is under major revision at <i>Service Science</i>. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5075293" target="_blank" rel="noopener">SSRN →</a></p>
+          </li>
+          <li>
+            <time datetime="2024-11">Nov 2024</time>
+            <p>My paper <em>“State discretization for continuous-state MDPs in infectious disease control”</em> with Sze-Chuan Suen is published in <i>IISE Transactions on Healthcare Systems Engineering</i>. <a href="https://www.tandfonline.com/doi/abs/10.1080/24725579.2024.2428953" target="_blank" rel="noopener">Link →</a></p>
+          </li>
+          <li>
+            <time datetime="2024-08">Aug 2024</time>
+            <p>My paper <em>“Optimizing Vaccine Site Locations While Considering Travel Inconvenience and Public Health Outcomes”</em> with Sze-Chuan Suen, Han Yu, Maged Dessouky, and Fernando Ordóñez is under major revision at <i>Health Care Management Science</i>. <a href="https://arxiv.org/abs/2403.17923" target="_blank" rel="noopener">arXiv →</a></p>
+          </li>
+          <li>
+            <time datetime="2024-02">Feb 2024</time>
+            <p>My paper <em>“Quantifying the benefits of increasing decision-making frequency for health applications with regular decision epochs”</em> with Sze-Chuan Suen, Vinay Sundaram, and Cynthia L. Gong is published in <i>IISE Transactions</i>. <a href="https://www.tandfonline.com/doi/abs/10.1080/24725854.2024.2321492" target="_blank" rel="noopener">Link →</a></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2025</span> Suyanpeng Zhang</span>
+      <div class="footer-links">
+        <a href="CV_Suyanpeng.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.linkedin.com/in/suyanpengzhang/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/suyanpengzhang" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
-  </div>
-  <div class="hero">
-  <div class="recent">
-      <h1>Recent News:</h1>
-    <li>
-          [<strong>May 2025</strong>] My paper "Quantifying the benefits of increasing decision-making frequency for health applications with regular decision epochs" has been selected as a featured research in ISE Magazine. (<a href="featuredISE.pdf" target="_blank">Link</a>).
-        </li>
-      <li>
-          [<strong>March 2025</strong>] My paper "Strategic Influence of Household Attitudes on HPV Vaccination in Kenya: A Network-Based Optimization Approach" with Sze-chuan Suen and Corrina Moucheraud is now under major revision at Service Science (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5075293" target="_blank">SSRN Link</a>).
-        </li>
-     <li>
-          [<strong>Nov 2024</strong>] My paper "State discretization for continuous-state MDPs in infectious disease control" with Sze-chuan Suen is now published at IISE Transactions on Health Systems Engineering (<a href="https://www.tandfonline.com/doi/abs/10.1080/24725579.2024.2428953" target="_blank">Link</a>).
-        </li>
-     <li>
-          [<strong>Aug 2024</strong>] My paper "Optimizing Vaccine Site Locations While Considering Travel Inconvenience and Public Health Outcomes" with Sze-chuan Suen, Han Yu, Maged Dessouky, and Fernando Ordonez is now under major revision at Health Care Management Science (<a href="https://arxiv.org/abs/2403.17923" target="_blank">arxiv Link</a>).
-        </li>
-    <li>
-          [<strong>Feb 2024</strong>] My paper "Quantifying the benefits of increasing decision-making frequency for health applications with regular decision epochs" with Sze-chuan Suen, Vinay Sundaram, and Cynthia L Gong is now published at IISE Transactions (<a href="https://www.tandfonline.com/doi/abs/10.1080/24725854.2024.2321492" target="_blank">Link</a>).
-        </li>
-    </div>
-  </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
