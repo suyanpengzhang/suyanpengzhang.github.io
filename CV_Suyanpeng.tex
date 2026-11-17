@@ -1,0 +1,279 @@
+% Curriculum Vitae -- Suyanpeng Zhang
+% Compile with pdflatex (e.g. on Overleaf) and save the output as CV_Suyanpeng.pdf
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=1pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=1.8em, itemsep=2pt, topsep=2pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% \entry{Left text}{Right text (dates)}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+\newcommand{\me}{\textbf{Zhang S}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Suyanpeng Zhang}\\[4pt]
+  Chicago, IL \;|\; \href{mailto:suyan430@gmail.com}{suyan430@gmail.com} \;|\; (518) 961-9378\\
+  \href{https://suyanpengzhang.github.io/}{Home Page} \;|\;
+  \href{https://scholar.google.com/citations?user=c8Jx3mAAAAAJ&hl=en}{Google Scholar} \;|\;
+  \href{https://www.linkedin.com/in/suyanpengzhang/}{LinkedIn} \;|\;
+  \href{https://github.com/suyanpengzhang}{GitHub}
+\end{center}
+
+\section{Research Interests}
+\textbf{Methods:} dynamic programming; Markov decision processes; mixed-integer programming; optimization;
+dynamic systems modeling; deep learning; machine learning; multimodal models; AI agents; survival analysis;
+causal inference; network analysis
+
+\textbf{Applications:} health policy modeling; infectious disease control; medical decision making; vaccination;
+disease monitoring; oncology; healthcare analytics
+
+\section{Current Employment}
+\entry{Data Scientist II, Tempus AI, Chicago, IL}{Oct 2025 -- Present}
+\begin{itemize}
+  \item Built scalable SQL cohorting pipelines across 1M+ patients, integrating clinical data, outcomes (OS, PFS,
+        TTNT), biomarkers (DNA, RNA), and H\&E pathology features.
+  \item Applied dimension reduction and representation learning methods, including PCA, NMF, PLS, MOFA, VAE, and
+        pathway VAE, to high-dimensional molecular (20,000+ RNA and 2,000+ DNA) and pathology (3,000+ H\&E)
+        features.
+  \item Developed ensemble and multimodal predictive models using foundation-model embeddings, H\&E image
+        embeddings, and SAE-based feature distillation from embeddings. Across two projects, one project's
+        ensemble model passed clinical validation; the other is being prepared for clinical validation.
+  \item Developed a LangGraph AI agent deployed through FastAPI for SQL querying, cohort construction, ML
+        workflows, and reporting; streamlined system prompts to reduce costs by over 15\% and improved SQL
+        accuracy by 15\%.
+  \item Built evaluation pipelines with Arize to compare accuracy and cost across development branches and
+        assess agent outputs.
+\end{itemize}
+
+\section{Education}
+\entry{University of Southern California, Los Angeles, CA}{Aug 2019 -- May 2024}
+\begin{itemize}
+  \item Ph.D. in Industrial \& Systems Engineering\\
+        Advisor: Dr. Sze-Chuan Suen\\
+        Dissertation: \emph{Optimizing Healthcare Decision-Making: Markov Decision Processes for Liver
+        Transplants, Frequent Interventions, and Infectious Disease Control}
+  \item M.S. in Computer Science
+\end{itemize}
+\entry{University of Michigan, Ann Arbor, MI}{Aug 2017 -- May 2019}
+\begin{itemize}
+  \item M.S. in Industrial \& Operations Engineering\\
+        Advisor: Dr. Brian Denton
+\end{itemize}
+\entry{Rensselaer Polytechnic Institute, Troy, NY}{Aug 2013 -- May 2017}
+\begin{itemize}
+  \item B.S. in Mathematics
+\end{itemize}
+
+\section{Publications}
+
+\subsection*{Journal Papers}
+\begin{enumerate}
+  \item Moucheraud C, Miao J, Ochieng E, \me, Ganda G, Golub GM, Hoffman RM, Szilagyi PG, \& Suen SC. (2026).
+        Changes in attitudes toward the HPV vaccine in Kenya. \emph{PLOS Global Public Health}, 6(10), e0007508.
+  \item \me, Suen SC, Yu H, Dessouky M, \& Ord\'o\~nez F. (2026). Optimizing vaccine site locations while
+        considering travel inconvenience and public health outcomes. \emph{Health Care Management Science}, 29(3).
+  \item Yu H, \me, Suen SC, Dessouky M, \& Ord\'o\~nez F. (2025). Understanding the traffic pattern impacts of
+        COVID-19 lockdown orders. \emph{Computers \& Industrial Engineering}, 211, 111628.
+  \item \me, \& Suen SC. (2025). State discretization for continuous-state MDPs in infectious disease control.
+        \emph{IISE Transactions on Healthcare Systems Engineering}, 15(1), 96--115.
+  \item \me, Suen SC, Sundaram V, \& Gong CL. (2025). Quantifying the benefits of increasing decision-making
+        frequency for health applications with regular decision epochs. \emph{IISE Transactions}, 57(5), 469--483.
+        \emph{(Featured in ISE Magazine, May 2025)}
+  \item \me, Jin J, Yu H, Hong Y, Sood N, \& Suen SC. (2024). The impact of COVID-19 vaccination rate on traffic
+        recovery. \emph{Scientific Reports}, 14(1), 22066.
+  \item \me, Silverman A, Suen SC, Andrews C, \& Chen BK. (2022). Differential patterns of opioid misuse between
+        younger and older adults -- a retrospective observational study using data from South Carolina's
+        prescription drug monitoring program. \emph{The American Journal of Drug and Alcohol Abuse}, 48(5), 618--628.
+  \item \me, Suen SC, Gong CL, Pham J, Trebicka J, Duvoux C, Klein AS, Wu T, Jalan R, \& Sundaram V. (2021).
+        Early transplantation maximizes survival in severe acute-on-chronic liver failure: Results of a Markov
+        decision process model. \emph{JHEP Reports}, 3(6), 100367.
+\end{enumerate}
+
+\subsection*{Working Papers}
+\begin{enumerate}
+  \item \me, Suen SC, \& Moucheraud C. Strategic Influence of Household Attitudes on HPV Vaccination in Kenya:
+        A Network-Based Optimization Approach. (under minor revision at \emph{Service Science})
+  \item \me, \& Mehrotra S. Training Large Discrete-State Markov Models Using Controllable Biased Stochastic
+        Gradients. (submitted to \emph{INFORMS Journal on Computing})
+\end{enumerate}
+
+\subsection*{Conference Proceedings and Abstracts}
+\begin{enumerate}
+  \item Hussain S, Barrios PA, Hu H, \me, Furmanchuk A, Dentici O, Mehrotra S, \& Ladner DP. (2026). High
+        Mortality in Compensated Cirrhosis Amid Limited Transplant Access. \emph{American Journal of
+        Transplantation}, 26(1), S49. (Abstract)
+  \item Wei S, \me, Hussain S, Balbale SN, Zhao L, Mazumder NR, Mehrotra S, \& Ladner DP. (2025). The Prevalence
+        and Impact of Alzheimer's and Related Dementia on Cirrhosis: A Retrospective Study. \emph{Innovation in
+        Aging}, 9(Supplement 2). (Abstract)
+  \item Otles E, Wang HZ, \me, Denton BT, Seymour J, \& Wiens J. (2019). Return to work after injury: a
+        sequential prediction \& prescription problem. \emph{Machine Learning for Healthcare}. (Clinical Abstract)
+\end{enumerate}
+
+\subsection*{Conference Presentations}
+\begin{enumerate}
+  \item \me, Suen SC, Moucheraud C. Strategic Influence of Household Attitudes on HPV Vaccination in Kenya:
+        A Network-Based Optimization Approach. IISE Annual Conference \& Expo 2025.
+  \item Jin J, \me, Suen SC. Optimizing Vehicle Routing and Nurse Scheduling for Mobile Vaccine Team Units in
+        Los Angeles. SMDM 2024. Boston, MA. \textbf{Lee B. Lusted Award Finalist}
+  \item \me, Suen SC, Yu H, Dessouky M, Ord\'o\~nez F. Optimizing Vaccine Site Locations While Considering Travel
+        Inconvenience and Public Health Outcomes. INFORMS 2024. Seattle, WA.
+  \item \me, Suen SC, Yu H, Dessouky M, Ord\'o\~nez F. Optimizing Clinic Locations While Considering Commuting
+        Patterns to Reduce Transportation Costs of Vaccination. SMDM 2023. Philadelphia, PA.
+  \item \me, Suen SC. A Greedy Discretization for Continuous State Dynamic Programming in Infectious Disease
+        Control. INFORMS 2023. Phoenix, AZ.
+  \item \me, Yu H, Dai P, Suen SC, Dessouky MM, Ord\'o\~nez F. Using Dynamic Origin Destination Estimation Using
+        Road Traffic Sensor Data for Disease Control Insights. INFORMS Healthcare 2023. Toronto, ON.
+  \item \me, Suen SC. Quantifying the Benefits of More Frequent Decision Making Opportunities. INFORMS
+        Healthcare 2023. Toronto, ON.
+  \item \me, Suen SC, Yu H, Nguyen A, Dessouky M. Understanding Quantifying the Health Impacts of COVID-19
+        Lockdown Policies in Los Angeles Using Traffic Data. SMDM 2022. Seattle, WA.
+        \textbf{Lee B. Lusted Award Finalist}
+  \item \me, Suen SC. An Approximate Algorithm for Optimizing Repeated Decisions in Infectious Disease Control.
+        INFORMS 2022. Indianapolis, IN.
+  \item \me, Suen SC. Optimizing Repeated Decisions in Infectious Disease Control. INFORMS 2021. Anaheim, CA
+        and Virtual.
+  \item \me, Suen SC, Yu H, Nguyen A, Dessouky M. Modeling the Dynamics of COVID-19 in Los Angeles Using Traffic
+        Information. SMDM 2021. Virtual.
+  \item \me, Suen SC, Yu H, Nguyen A, Dessouky M. Modeling the Dynamics of COVID-19 in Los Angeles Using Traffic
+        Information. INFORMS Healthcare 2021. Virtual.
+  \item \me, Suen SC, Sundaram V, Gong C, Pham J. Optimal Timing of Liver Transplantation for ACLF-3 Patients.
+        INFORMS Healthcare 2021. Virtual.
+  \item Chen B, \me, Suen SC. Differential Patterns of Potential Opioid Misuse Between Younger and Older Adults:
+        Evidence from South Carolina's SCRIPTS Database. American Public Health Association (APHA) Annual
+        Meeting and Expo 2021. Denver, CO and Virtual.
+  \item \me, Suen SC. Identifying the Optimal Timing of Liver Transplantation for ACLF-3 Patients. POMS 2021.
+        Virtual.
+  \item \me, Suen SC. Benefits of Making More Frequent Decisions Under a MDP Framework. INFORMS 2020. Virtual.
+  \item \me, Suen SC, Gong C, Pham J, Sundaram V. Optimal Timing of Liver Transplantation for ACLF-3 Patients
+        Using a Dynamic Model. AASLD 2020. Virtual.
+  \item \me, Suen SC, Gong C, Pham J, Sundaram V. Optimal Timing of Liver Transplantation for ACLF-3 Patients
+        Using a Dynamic Model. SMDM 2020. Virtual.
+  \item \me, Wang HZ, Denton BT, Wiens J, Seymour J. A Latent Markov Model for Predicting Return to Work for
+        Injured Workers. INFORMS 2018. Phoenix, AZ.
+\end{enumerate}
+
+\section{Industry Experience}
+\entry{Data Science Intern, Webank.com, Shenzhen, China}{Jun 2017 -- Aug 2017}
+\begin{itemize}
+  \item Built coupon-targeting machine learning models with feature engineering (data scaling, weight-of-evidence
+        transformation, PCA) using logistic regression, support vector machines, and ensemble methods; improved
+        test AUC by 30\%.
+\end{itemize}
+
+\section{Research Experience}
+\entry{Postdoctoral Scholar, Northwestern University}{Jun 2024 -- Oct 2025}
+\begin{itemize}
+  \item Host: Dr. Sanjay Mehrotra
+  \item Integrated and imputed large EHR and transplant registry data using R, enabling population-level analysis.
+  \item Developed an R package to learn multi-state Markov models via biased stochastic gradient descent,
+        improving scalability from 20 to 1,000+ states on datasets with millions of observations (50x more than
+        existing R packages).
+  \item Mentored one Ph.D. researcher and presented research outcomes at engineering and medical conferences.
+\end{itemize}
+\entry{Research Assistant, University of Southern California}{Aug 2019 -- May 2024}
+\begin{itemize}
+  \item Built simulation models from SQL-processed traffic data to study COVID-19 dynamics across 26 regions over
+        two years, accounting for asymptomatic and symptomatic spread.
+  \item Developed large-scale dynamic programming and Markov decision process models for sequential decisions,
+        improving policy performance metrics by 70\% in an empirical setting.
+  \item Built mixed-integer linear programming models for resource allocation and influence maximization,
+        integrating network dynamics and logistics; designed scalable heuristics for large problem instances.
+  \item Applied LSTM with conformal prediction to estimate uncertainty bounds for COVID-19 hospitalization
+        forecasts.
+  \item Applied regression and clustering to 200,000+ insurance records to identify temporal patterns of opioid
+        misuse.
+\end{itemize}
+\entry{Research Data Analyst, University of California, Los Angeles}{Jun 2023 -- Aug 2023}
+\begin{itemize}
+  \item Principal investigator: Dr. Corrina Moucheraud
+  \item Employed network analysis and linear threshold models to gain insights into the adoption of HPV
+        vaccination across African regions.
+\end{itemize}
+\entry{Research Assistant, University of Michigan, Ann Arbor}{Jan 2018 -- May 2019}
+\begin{itemize}
+  \item Advisor: Dr. Brian Denton
+  \item Cleaned large insurance claims data on lower back injuries from Peers Health.
+  \item Modeled return-to-work outcomes using dynamic Bayesian (latent Markov) models, Kaplan--Meier curves, and
+        Cox regression.
+\end{itemize}
+\entry{Undergraduate Researcher, Rensselaer Polytechnic Institute}{Jul 2015 -- Dec 2016}
+\begin{itemize}
+  \item Advisor: Dr. Kristin Bennett
+  \item Worked on data preprocessing, statistical analysis, machine learning, and data modeling projects in
+        semiconductor manufacturing, children's growth, and acute kidney injury.
+\end{itemize}
+
+\section{Technical Skills}
+\textbf{Languages:} Python, MATLAB, Java, C/C++, SQL, R\\
+\textbf{Tools:} BigQuery, Claude Code, Codex, Cursor, dbt, Docker, GitHub, Google Cloud, Gurobi, LangGraph,
+PyTorch, AMPL\\
+\textbf{Skills:} large-scale optimization, survival analysis, deep learning, machine learning, AI agents,
+multimodal models, simulation
+
+\section{Teaching}
+\begin{itemize}
+  \item Teaching Assistant, University of Southern California
+  \begin{itemize}
+    \item ISE 530: Optimization Methods for Analytics
+    \item ISE 534: Data Analytics Consulting
+  \end{itemize}
+  \item Guest Lecturer, University of Southern California
+  \begin{itemize}
+    \item ISE 505: Modeling for Health Policy and Medical Decision Making
+    \item ISE 530: Optimization Methods for Analytics
+  \end{itemize}
+  \item Book Chapters, Northwestern University
+  \begin{itemize}
+    \item Optimization-Based Data Imputation
+    \item Training Markov Chains
+  \end{itemize}
+\end{itemize}
+
+\section{Mentorship}
+\textbf{Graduate Mentees}
+\begin{itemize}
+  \item Jing Jin (2022--2024)
+  \item Kunyu Yu (2022)
+\end{itemize}
+\textbf{Undergraduate Mentees}
+\begin{itemize}
+  \item Sanya Khattar (2023--2024), through the Center for Undergraduate Research in Viterbi Engineering (CURVE)
+        research program
+  \item Ying Hong (2021--2022)
+  \item Jessica Pham (2019--2020)
+\end{itemize}
+\textbf{High School Mentees}
+\begin{itemize}
+  \item Sarah Brown (2022), through USC Viterbi's Summer High School Intensive in Next-Generation Engineering
+        (SHINE) research program
+\end{itemize}
+
+\section{Awards and Honors}
+\begin{itemize}
+  \item Lee B. Lusted Award Finalist, SMDM, 2022, 2024
+  \item Bonder Award, INFORMS, 2021
+  \item Bonder Scholarship Top 3 Finalist, INFORMS, 2021
+  \item Viterbi Fellowship, USC, 2019
+\end{itemize}
+
+\section{Professional Associations and Service}
+\entry{Society for Medical Decision Making (SMDM)}{2020 -- Present}
+\entry{The Institute for Operations Research and the Management Sciences (INFORMS)}{2018 -- Present}
+\begin{itemize}
+  \item INFORMS 2023, Phoenix, AZ, Session Chair
+  \item INFORMS 2024, Seattle, WA, Session Chair
+  \item INFORMS 2025, Atlanta, GA, Session Chair
+\end{itemize}
+
+\end{document}
